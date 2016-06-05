@@ -1,0 +1,60 @@
+.footer {
+    max-width 1260px
+    margin 0 auto
+    padding 20px 40px
+    
+    text-align center
+    
+    &:after {
+        content ''
+        display block
+        clear both
+    }
+    
+    .copy {
+        font-size 14px
+        color #a6a6a6
+        
+        margin-top 7px
+
+    }
+    
+    .social {
+        margin-bottom 30px
+        margin 0 auto
+        
+        a {
+            display inline-block
+            width 25px
+            height 25px
+            margin-right 15px
+            
+            background url('../images/social-sprite.png')
+            
+            opacity 0.45
+            
+            border-radius 5px
+            
+            &:nth-child(2) {
+                background-position 32% 0 
+            }
+            &:nth-child(3) {
+                background-position 66% 0
+            }
+            &:nth-child(4) {
+                background-position 100% 0
+            }
+        }
+    }
+}
+
+@media (min-width: 560px) {
+    .copy {
+        float left
+    }
+    
+    .social {
+        float right
+        
+    }
+}

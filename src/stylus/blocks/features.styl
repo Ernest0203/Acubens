@@ -1,0 +1,90 @@
+.features {
+    padding 80px 20px
+    text-align center
+    
+    h3 {
+        font 36px font-regular
+        color #a399cd
+    }
+    
+    p {
+        margin 35px 0 70px
+        
+        font-size  24px
+        color #413b52
+        
+        b {
+            color #a399cd
+        }
+    }
+    
+    &__list {}
+        
+    &__item {
+        width 12%
+        margin-right 4%
+        
+        display inline-block
+        
+        list-style none
+        
+        vertical-align top
+        
+        &:last-child {
+            margin-right 0
+        }
+        
+        i {
+            display block
+            margin 0 auto
+            
+            width 60px
+            height 60px
+            
+            background url(../../images/sprite-features-icons.png)
+            
+            &:nth-of-type(1) {
+                background-position -6px -6px
+            }
+            &:nth-of-type(2) {
+                background-position -76px -6px
+            }
+            &:nth-of-type(3) {
+                background-position -6px -6px
+            }
+            &:nth-of-type(4) {
+                background-position -6px -6px
+            }
+        }
+        
+        h4 {
+            margin 40px 0 20px
+            
+            font-size  24px 
+            color #413b52
+        }
+        
+        p {
+            font-size 18px
+            color #a6a6a6
+        }
+        
+        @media (max-width: 800px) {
+            width 20%
+        }
+        @media (max-width: 620px) {
+            width 45%
+            
+            &:nth-child(2) {
+            margin-right 0
+        }
+        }
+                
+    }
+    
+    @media (max-width: 600px) {
+        padding 40px 20px 0
+    }
+    
+    
+}

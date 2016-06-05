@@ -1,0 +1,59 @@
+.gallery-wrapper {
+    background-color #f5f4f7
+}
+
+.gallery {
+    max-width 1260px
+    padding 45px 48px
+    margin 0 auto
+    
+    font-size 0
+        
+    &__item {
+        list-style none
+        display inline-block
+        
+        width 23%
+                
+        cursor pointer
+        
+        margin-right 2.3%
+        margin-bottom 25px
+        
+        &:nth-child(3) {
+            margin-right 0
+        }
+        &:nth-child(4) {
+            margin-bottom  0
+        }
+        &:nth-child(5) {
+            margin-right 0
+            margin-bottom  0
+        }
+        
+               
+        @media (max-width: 600px) {
+            margin-bottom 0
+            
+            &:nth-child(3) {
+                margin-right 2.8%
+            }
+        }
+    }
+    
+    &__item--main {
+        float left
+        
+        width 48.5%
+                        
+        margin-right 2.3%
+                    
+        @media (max-width: 600px) {
+            
+            margin-bottom 25px
+            width 100% 
+        }
+    }
+      
+    
+}

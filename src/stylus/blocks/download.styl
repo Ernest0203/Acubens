@@ -1,0 +1,41 @@
+.download-wrapper {
+    background url('../images/header-bg.jpg')
+}
+
+.download-inner-wrapper {
+    background rgba(105, 97, 127, .8)
+}
+
+.download {
+    padding 95px 40px 75px
+    text-align center
+    
+    h4 {
+        font 30px font-regular
+        color #fff
+        
+        text-transform uppercase
+    }
+    
+    p {
+        font-size 30px
+        color #fff
+        
+        margin 35px 0 60px
+    }
+    
+    .btn-download {
+        btn-download(16px, 40px, #7851a9, 0.85, 2px, 0 3px 0 rgba(0,0,0,0.1), 15px, font-regular, #fff, uppercase, none)
+        
+        &:hover {
+            opacity 1
+        }
+        
+        &:active {
+            box-shadow none
+            
+            position relative
+            top 2px
+        }
+    }
+}

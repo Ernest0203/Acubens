@@ -1,0 +1,37 @@
+@import 'fonts.css'
+
+* {
+    margin 0
+    padding 0
+    box-sizing border-box
+}
+
+
+font-regular = 'SourceSansPro-Regular'
+font-bold = 'SourceSansPro-Bold'
+
+btn-download(top, side, background-color, opacity, border-radius, box-shadow, size, family, color, transform, decoration) {
+    padding top side
+    background-color background-color 
+    opacity opacity
+    border-radius border-radius
+    box-shadow box-shadow
+    font-size  size
+    font-family family
+    color color
+    text-transform transform
+    text-decoration decoration
+}
+
+body {
+    font-family font-regular
+}
+
+@import 'slick.css'
+@import 'header'
+@import 'about'
+@import 'gallery'
+@import 'features'
+@import 'testimonials'
+@import 'download'
+@import 'footer'
